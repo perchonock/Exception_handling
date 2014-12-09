@@ -25,4 +25,17 @@ try:
     squareRoot(-1)
 except Exception as err:
     print(err.args[1])
-    raise
+
+
+
+def some_fun(x):
+    print(str(x) + ': ', end = '')
+    try:
+        print(math.sqrt(x))
+    except:
+        print('не могу')
+    finally:
+        print('это было весело')
+
+some_fun(4)
+some_fun(-1)
